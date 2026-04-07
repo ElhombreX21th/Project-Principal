@@ -33,3 +33,13 @@ A execução imprime:
 3. Inserção do registro na **IncidentDB**.
 4. **Business Rule AFTER** adiciona notas pós-inserção.
 5. Chamada da **integração REST simulada** com payload do incidente.
+
+## Testes automatizados
+
+Execute:
+
+```bash
+node --test
+```
+
+Isso roda os testes do arquivo `test/servicenow-mini-app.test.js`.
