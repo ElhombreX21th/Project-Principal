@@ -1,12 +1,20 @@
 # Project-Principal
 
-Mini app de estudo em Node.js inspirado em ServiceNow para praticar conceitos de:
+Mini app de estudo em Node.js inspirado em ServiceNow para praticar conceitos de automação de fluxo de incidentes.
 
-- Tabela de incidentes (simulada em memória)
-- Script Include (lógica reutilizável)
+## Screenshots
+
+![Project Principal screenshot](screenshot-1.svg)
+
+![Workflow preview](screenshot-2.svg)
+
+## Conceitos praticados
+
+- Tabela de incidentes simulada em memória
+- Script Include com lógica reutilizável
 - Business Rule `before` / `after`
-- Client Script (`onChange`)
-- Integração REST (simulada)
+- Client Script `onChange`
+- Integração REST simulada
 
 ## Estrutura
 
@@ -36,10 +44,12 @@ A execução imprime:
 
 ## Testes automatizados
 
-Execute:
-
 ```bash
 node --test
 ```
 
 Isso roda os testes do arquivo `test/servicenow-mini-app.test.js`.
+
+## Valor para portfolio
+
+Este projeto demonstra raciocínio de automação, regras de negócio, simulação de integrações e lógica de fluxo de atendimento técnico.
