@@ -1,6 +1,6 @@
-# Project-Principal
+# Project Principal
 
-Mini app de estudo em Node.js inspirado em ServiceNow para praticar conceitos de automação de fluxo de incidentes.
+Small Node.js study app inspired by ServiceNow-style incident workflow automation concepts.
 
 ## Screenshots
 
@@ -8,48 +8,48 @@ Mini app de estudo em Node.js inspirado em ServiceNow para praticar conceitos de
 
 ![Workflow preview](screenshot-2.svg)
 
-## Conceitos praticados
+## Concepts Practiced
 
-- Tabela de incidentes simulada em memória
-- Script Include com lógica reutilizável
-- Business Rule `before` / `after`
-- Client Script `onChange`
-- Integração REST simulada
+- Simulated in-memory incident table
+- Script Include-style reusable logic
+- `before` and `after` Business Rule behavior
+- `onChange` Client Script behavior
+- Simulated REST integration
 
-## Estrutura
+## Structure
 
-- `src/servicenow-mini-app.js`: implementação completa da mini aplicação.
+- `src/servicenow-mini-app.js`: complete implementation of the mini application.
 
-## Como executar
+## How to Run
 
-Pré-requisito: Node.js 18+.
+Prerequisite: Node.js 18+.
 
 ```bash
 node src/servicenow-mini-app.js
 ```
 
-A execução imprime:
+The execution prints:
 
-1. Incidente criado
-2. Resultado da integração REST simulada
-3. Todos os registros da base em memória
+1. Created incident
+2. Simulated REST integration result
+3. All records stored in the in-memory database
 
-## Fluxo implementado
+## Implemented Flow
 
-1. **Client Script** valida se `assignment_group` é obrigatório por categoria.
-2. **Business Rule BEFORE** calcula prioridade, define estado padrão e adiciona nota de trabalho.
-3. Inserção do registro na **IncidentDB**.
-4. **Business Rule AFTER** adiciona notas pós-inserção.
-5. Chamada da **integração REST simulada** com payload do incidente.
+1. **Client Script** validates whether `assignment_group` is required by category.
+2. **BEFORE Business Rule** calculates priority, sets the default state, and adds a work note.
+3. The record is inserted into **IncidentDB**.
+4. **AFTER Business Rule** adds post-insert notes.
+5. A simulated **REST integration** is called with the incident payload.
 
-## Testes automatizados
+## Automated Tests
 
 ```bash
 node --test
 ```
 
-Isso roda os testes do arquivo `test/servicenow-mini-app.test.js`.
+This runs the tests from `test/servicenow-mini-app.test.js`.
 
-## Valor para portfolio
+## Portfolio Value
 
-Este projeto demonstra raciocínio de automação, regras de negócio, simulação de integrações e lógica de fluxo de atendimento técnico.
+This project demonstrates automation reasoning, business rules, integration simulation, and support workflow logic.
